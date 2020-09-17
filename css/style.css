@@ -200,6 +200,7 @@ body {
     background-color: transparent;
     position: relative;
     z-index: 9;
+    transition: all 0.5s cubic-bezier(0.86, 0.49, 0.83, 0.67);
     cursor: pointer; }
     .mobile__menu .button img {
       width: 100%; }
@@ -228,6 +229,8 @@ body {
       opacity: 0; }
       .mobile__menu .mobile__nav li a {
         font-size: 2rem; }
+  .mobile__menu.active .button {
+    transform: rotate(90deg); }
   .mobile__menu.active .mobile__nav {
     height: 100vh; }
     .mobile__menu.active .mobile__nav li {

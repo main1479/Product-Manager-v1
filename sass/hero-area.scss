@@ -95,6 +95,7 @@
         background-color: transparent;
         position: relative;
         z-index: 9;
+        transition: all .5s cubic-bezier(.86,.49,.83,.67);
         cursor: pointer;
 
         img{
@@ -140,6 +141,9 @@
 
 
     &.active{
+        .button{
+            transform: rotate(90deg);
+        }
 
         .mobile__nav{
             height: 100vh;
