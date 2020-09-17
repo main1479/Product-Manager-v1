@@ -1,0 +1,119 @@
+ .mentor_section{
+     margin: 10rem 0;  
+     
+     
+
+     .mentors-slide{
+         position: relative;
+
+         & .owl-dots .owl-dot{
+             display: none;
+         }
+
+         & .owl-nav button.owl-next, & .owl-nav button.owl-prev{
+            position: absolute;
+            left:-2.5rem;
+            top: 0%;
+            bottom: 0%;
+            z-index:9;
+            width: 50px;
+            height: 50px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding: 14px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: 0 8px 20px 0 #3138961a;
+            -webkit-transition: all 200ms ease;
+            transition: all 200ms ease;
+            color:$color-primary;
+
+            span{
+                font-size: 4rem;
+                font-weight: 100;
+                line-height: 3.5rem;
+            }
+
+            &:hover{
+                background:$color-primary;
+                color: #fff;
+            }
+
+
+        }
+         & .owl-nav button.owl-next{
+            left: inherit;
+            right: -2.5rem;
+        }
+        & .owl-nav button.owl-prev{
+           left: -2.5rem;
+        }
+     }
+
+
+     .mentor_card{
+        
+        &-inner{
+            min-height:35rem;
+            padding: 2rem;
+            display: flex;
+            align-items: flex-end;
+            border-radius: 2rem;
+            color: #fff;
+            .mentor-name{
+                font-size: 2.5rem;
+                font-weight: 500;
+            }
+            .mentor-role{
+                font-size: 1.4rem;
+            }
+            
+            &.mentor1{
+                background:linear-gradient(rgba($color-primary, .0),rgba($color-primary, .7)),url(../img/mentor1.jpg) no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            &.mentor2{
+                background:linear-gradient(rgba($color-primary, .0),rgba($color-primary, .5)),url(../img/mentor2.jpg) no-repeat;
+                background-size: cover;
+                background-position: top center;
+
+                @media only screen and (max-width:$px575){
+                    background-position: bottom center;
+                }
+            }
+
+            &.mentor3{
+                background:linear-gradient(rgba($color-primary, .0),rgba($color-primary, .7)),url(../img/mentor3.jpg) no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            &.mentor4{
+                background:linear-gradient(rgba($color-primary, .0),rgba($color-primary, .7)),url(../img/mentor4.jpg) no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+
+            &.mentor5{
+                background:linear-gradient(rgba($color-primary, .0),rgba($color-primary, .7)),url(../img/mentor5.jpg) no-repeat;
+                background-size: cover;
+                background-position: center center;
+            }
+        }
+     }
+
+     .btn-explore{
+        background:$color-secondary ;
+    
+        &:hover{
+            background: $color-primary;
+        }
+     }
+
+
+
+ }
+
+

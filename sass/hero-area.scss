@@ -1,0 +1,153 @@
+.nav{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #3138961a;
+    background-color: #fff;  
+
+
+    .nav-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+
+    .logo{
+        z-index: 9;
+    }
+
+    .nav__menu{
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width:$px992){
+            display: none; 
+        }
+
+        &-link{
+            display: inline-block;
+            padding-right: 15px;
+            padding-left: 15px;
+            -webkit-transition: all 200ms ease;
+            transition: all 200ms ease;
+            color: rgba(5, 5, 27, 0.8);
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .btn{
+            color: #fff; 
+        }
+
+        
+    }
+}
+
+
+.hero_text-box{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    text-align: center;
+
+    .heading-1{
+        text-align: center;
+        color:$color-primary;
+        font-size: 5.7rem;
+        line-height: 118%;
+        margin-bottom: 1rem;
+
+        @media only screen and (max-width:$px992){
+            font-size: 5rem;
+        }
+        @media only screen and (max-width:$px575){
+            font-size: 4.5rem;
+        }
+    }
+
+    .p-text{
+        max-width: 68rem;
+        margin: 20px auto 15px;
+        font-size: 2.2rem;
+        line-height: 140%;
+    }
+
+}
+.hero_img{
+    width: 100%;
+}
+
+.mobile__menu{
+
+    display: none;
+    @media only screen and (max-width:$px992){
+        display: block; 
+    }
+
+    .button{
+        width: 4rem;
+        height: 4rem;
+        border-radius: 5px;
+        background-color: transparent;
+        position: relative;
+        z-index: 9;
+        cursor: pointer;
+
+        img{
+            width: 100%;
+        }
+    }
+
+
+
+    .mobile__nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        height: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:#fff;
+        transition: all .5s cubic-bezier(.86,.49,.83,.67);
+
+        .btn{
+            color: #fff;
+            width: 270px;
+            max-width: none;
+            min-width: 270px;
+        }
+
+        li{
+            margin-bottom: 3rem;
+            transition: all .6s;
+            transition-delay: .3s;
+            opacity: 0;
+
+            a{
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+
+    &.active{
+
+        .mobile__nav{
+            height: 100vh;
+
+            li{
+                opacity: 1;
+            }
+        }
+
+    }
+}
