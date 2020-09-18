@@ -8,7 +8,8 @@
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 57%; } }
@@ -20,7 +21,8 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   color: #05051B;
-  line-height: 1.5; }
+  line-height: 1.5;
+  overflow-x: hidden !important; }
 
 .row {
   width: 95%;
@@ -74,14 +76,13 @@ body {
   font-size: 3.2rem;
   line-height: 1.2; }
 
-.logo h3 {
-  font-size: 1.6rem;
-  font-weight: 500;
-  color: #05051B; }
-
-@media only screen and (max-width: 64em) {
-  .logo h3 {
-    font-size: 2rem; } }
+.logo {
+  max-width: 15rem; }
+  .logo img {
+    width: 100%; }
+  @media only screen and (max-width: 64em) {
+    .logo h3 {
+      font-size: 2rem; } }
 
 .tac {
   text-align: center; }
@@ -129,8 +130,8 @@ body {
   margin-right: 1rem; }
 
 .nav {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0px;
   z-index: 999;
   margin-top: 0px;
@@ -164,7 +165,7 @@ body {
       color: #fff; }
 
 .hero_text-box {
-  padding-top: 6rem;
+  padding-top: 15rem;
   padding-bottom: 4rem;
   text-align: center; }
   .hero_text-box .heading-1 {
@@ -237,7 +238,8 @@ body {
       opacity: 1; }
 
 .slide_section {
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  overflow-x: hidden; }
   .slide_section .p-text {
     color: #8B8C99; }
   .slide_section .logo-slide {

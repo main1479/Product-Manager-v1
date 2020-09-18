@@ -1,6 +1,8 @@
 .nav{
-    position: -webkit-sticky;
-    position: sticky;
+    // position: -webkit-sticky;
+    // position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0px;
     z-index: 999;
     margin-top: 0px;
@@ -50,7 +52,7 @@
 
 
 .hero_text-box{
-    padding-top: 6rem;
+    padding-top: 15rem;
     padding-bottom: 4rem;
     text-align: center;
 

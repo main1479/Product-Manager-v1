@@ -24,6 +24,7 @@ $px380:23.75em; //380px
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 
     @media only screen and (max-width:$px1200){
         font-size: 57%;
@@ -53,6 +54,7 @@ body{
     font-size: 1.6rem;
     color: $color-primary;
     line-height: 1.5;
+    overflow-x: hidden !important;
 }
 
 .row{
@@ -129,10 +131,9 @@ body{
 }
 
 .logo{
-    h3{
-        font-size: 1.6rem;
-        font-weight: 500;
-        color: $color-primary;
+    max-width: 15rem;
+    img{
+        width: 100%;
     }
     @media only screen and (max-width:$px1024){
         h3{
