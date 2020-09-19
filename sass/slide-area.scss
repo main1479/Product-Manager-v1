@@ -96,7 +96,6 @@
             border-radius: 50%;
             background-color: #fff;
             box-shadow: 0 8px 20px 0 #3138961a;
-            -webkit-transition: all 200ms ease;
             transition: all 200ms ease;
             color:$color-primary;
 
@@ -218,9 +217,9 @@
 
     .intro-grid{
         display: grid;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        padding: 30px;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+        padding: 3rem;
         grid-auto-columns: 1fr;
         grid-column-gap: 0;
         grid-row-gap:3rem;
@@ -230,6 +229,7 @@
         background-color: #fff;
         box-shadow: 0 50px 150px -7px rgba(49, 56, 150, 0.1);
 
+        
 
         .i-item {
             margin-right: 19px;
@@ -277,7 +277,6 @@
             padding: 10px 19px;
             border-radius: 5px;
             background-color: rgba(49, 56, 150, 0.1);
-            -webkit-transition: all 200ms ease;
             transition: all 200ms ease;
             color: #313896;
             font-size: 1.6rem;
@@ -306,5 +305,4 @@
             }
         }
     }
-
 }

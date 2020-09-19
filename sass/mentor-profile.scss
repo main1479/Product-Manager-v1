@@ -1,0 +1,174 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 10 version
+*/
+
+.mentor__profile{
+    padding-top: 15rem;
+
+    .mentor-row{
+        max-width: 94rem;
+    }
+
+    .mentor__profile-grid{
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
+        grid-column-gap: 5rem;
+        -ms-grid-columns: 0.5fr 5rem 1fr;
+        grid-template-columns: 0.5fr 1fr;
+        -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-auto-columns: 1fr;
+        grid-row-gap: 2rem;
+
+        @media only screen and (max-width:$px575){
+
+        }
+    }
+
+    .mentor__profile-grid > *:nth-child(1){
+        -ms-grid-row: 1;
+        -ms-grid-column: 1
+    }
+
+    .mentor__profile-grid > *:nth-child(2){
+        -ms-grid-row: 1;
+        -ms-grid-column: 3
+    }
+
+
+
+    .mentor__info-left {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        @media only screen and (max-width:$px575){
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 1;
+            grid-row: 1/2;
+            grid-column: 1/-1;
+        }
+
+        .mentor_img{
+            height: 380px;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+                -o-object-fit: cover;
+                object-fit: cover;
+            }
+        }
+
+        .btn-explore{
+            width: 100%;
+            padding: 1.6rem 4rem !important;
+            font-size: 1.8rem;
+
+            &.btn-pay{
+                border: 0;
+                background: hsla(236, 51%, 40%, 0.102);
+                color: $color-primary;
+
+                &:hover{
+                    background:rgba(49, 55, 150, 0.302);
+                }
+            }
+        }
+    }
+
+
+    .mentor__info-right{
+        padding-top: 3rem;
+        @media only screen and (max-width:$px575){
+            -ms-grid-row: 2;
+            -ms-grid-row-span: 1;
+            grid-row: 2/3;
+            grid-column: 1/-1;
+            padding-top: 0;
+        }
+
+
+        &_top{
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(49, 56, 150, 0.1);
+
+            .mentor-name{
+                font-size: 2.5rem;
+                .country{
+                    font-size: 1.8rem;
+                    font-weight: 400;
+                    margin-left: 1rem;
+                }
+            }
+
+            .mentors-job{
+                color: $color-text2;
+                margin-bottom: 0.5rem;
+                font-weight: 500;
+                span{
+                    color: $color-primary;
+                }
+            }
+            
+            .join-date{
+                color: $color-text2;
+            }
+        }
+
+
+        &_middle{
+            padding: 2rem 0;
+            border-bottom: 1px solid rgba(49, 56, 150, 0.1);
+
+            & > *{
+                font-weight: 500;
+                color: $color-text2;
+                 span{
+                     color: $color-primary;
+                 }
+            }
+
+            .mentor-reviews{
+                color: $color-primary;
+            }
+        }
+
+        &_bottom{
+            padding: 2rem 0;
+
+            .review-block{
+                padding: 3rem 2rem;
+                background: #F5F5FA;
+                border-radius: 10px;
+
+            }
+
+            .review-img{
+                margin-top: 2rem;
+                margin-top: -8px;
+                padding: 0 3.2rem 1.2rem;
+                text-align: center;
+
+                img{
+                    width: 15rem;
+                    height: 11rem;
+                    margin-top: -2.9rem;
+                    margin-bottom: -.8rem;
+                    -o-object-fit: cover;
+                       object-fit: cover;
+                }
+
+                .no-review-text{
+                    margin-bottom: 16px;
+                    color:$color-text2;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

@@ -10,6 +10,17 @@
 //   })
 
 
+// mobile menu
+
+let toggler = document.querySelectorAll('.toggle');
+let menu = document.querySelector('.mobile__menu');
+
+toggler.forEach(link => {
+    link.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    })
+})
+
   $('.owl-carousel1').owlCarousel({
     loop:true,
     responsive:{
@@ -68,14 +79,4 @@ $('.owl-carousel').owlCarousel({
 
 
 
-// mobile menu
-
-let toggler = document.querySelectorAll('.toggle');
-let menu = document.querySelector('.mobile__menu');
-
-toggler.forEach(link => {
-    link.addEventListener('click', () => {
-        menu.classList.toggle('active');
-    })
-})
 

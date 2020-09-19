@@ -1,6 +1,5 @@
+
 .nav{
-    // position: -webkit-sticky;
-    // position: sticky;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -13,9 +12,15 @@
 
 
     .nav-flex{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         padding: 1rem 0;
     }
 
@@ -24,8 +29,12 @@
     }
 
     .nav__menu{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
 
         @media only screen and (max-width:$px992){
             display: none; 
@@ -36,6 +45,7 @@
             padding-right: 15px;
             padding-left: 15px;
             -webkit-transition: all 200ms ease;
+            -o-transition: all 200ms ease;
             transition: all 200ms ease;
             color: rgba(5, 5, 27, 0.8);
             font-size: 15px;
@@ -53,7 +63,7 @@
 
 .hero_text-box{
     padding-top: 15rem;
-    padding-bottom: 4rem;
+    padding-bottom: 4rem; 
     text-align: center;
 
     .heading-1{
@@ -97,6 +107,8 @@
         background-color: transparent;
         position: relative;
         z-index: 9;
+        -webkit-transition: all .5s cubic-bezier(.86,.49,.83,.67);
+        -o-transition: all .5s cubic-bezier(.86,.49,.83,.67);
         transition: all .5s cubic-bezier(.86,.49,.83,.67);
         cursor: pointer;
 
@@ -112,13 +124,24 @@
         top: 0;
         left: 0;
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: 0;
         overflow: hidden;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         background:#fff;
+        -webkit-transition: all .5s cubic-bezier(.86,.49,.83,.67);
+        -o-transition: all .5s cubic-bezier(.86,.49,.83,.67);
         transition: all .5s cubic-bezier(.86,.49,.83,.67);
 
         .btn{
@@ -130,8 +153,12 @@
 
         li{
             margin-bottom: 3rem;
+            -webkit-transition: all .6s;
+            -o-transition: all .6s;
             transition: all .6s;
-            transition-delay: .3s;
+            -webkit-transition-delay: .3s;
+                 -o-transition-delay: .3s;
+                    transition-delay: .3s;
             opacity: 0;
 
             a{
@@ -144,7 +171,9 @@
 
     &.active{
         .button{
-            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                    transform: rotate(90deg);
         }
 
         .mobile__nav{
